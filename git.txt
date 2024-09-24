@@ -8,3 +8,14 @@ git add <file names>
 git commit -m "msg"
 
 git restore --staged <file>
+
+git reset <hash id> => will put all the changes made after this commit to unstage area
+
+git stash => will send all the files of staging area to backstage 
+
+git stash pop => will get back all the files from backstage to staging area
+
+git stash clear => will clear all the changes made by you on the backkstage area
+
+git reomote add origin https://github.com/08priyank28/DSA
+
