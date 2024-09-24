@@ -19,3 +19,6 @@ git stash clear => will clear all the changes made by you on the backkstage area
 
 git reomote add origin https://github.com/08priyank28/DSA
 
+git branch feature
+git checkout feature => now pointer will point to feature
+git merge feature
