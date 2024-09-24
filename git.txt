@@ -22,3 +22,108 @@ git reomote add origin https://github.com/08priyank28/DSA
 git branch feature
 git checkout feature => now pointer will point to feature
 git merge feature
+
+
+Git - Apna College
+
+Git : A Version Control System that helps to track changes in code.
+    Popular, Free & Open Source, Fast & Scalable
+
+Uses
+    Tracks the history
+    collaborate 
+
+Github : Website that allows developers to store and manage their code using Git.
+
+Configure Git
+git config --global user.name "Priyank Pandit"
+
+git config --global user.email "08priyank28@gmail.com"
+
+Clone & status
+    Clone : 
+        Cloning a repo on our local machine
+        git clone <link>
+    
+    Status :
+        displays the state of the code
+        git status
+            - untracked, modified, staged, unmodified
+    
+Add & Commit
+    add :
+        Adds new or changed file in your working directory to the Git staging area.
+        git add <file name>
+    
+    commit :
+        it is the record of changed
+        git commit -m "msg"
+
+Push Command
+    push :
+        upload local repo content to remote repo
+        git push origin master
+
+
+Init command : When you start project by creating folder in your local repo
+
+    git init
+    git status 
+    git add .
+    git commit -m "msg"
+    git status
+    git reomote add origin <url for repo> 
+        git reomote add origin https://github.com/08priyank28/DSA
+
+    git remote -v (to check remote)
+    git branch (to check branch)
+    git branch -M main (to rename branch)
+    git push origin main
+
+
+Git Branches
+
+    git branch (to check branch)
+    git branch -M main (to rename branch)
+    git checkout <branch-name> (to navigate)
+    git checkout -b <branch name> (to create new branch)
+    git checkout -d <branch name> (to delete branch)
+
+    Create feature branch and update your code into it and push it at the en to the origin
+    git push origin feature1
+
+
+Merging code
+    Way 1
+        git diff <branch name> (to compare commits, branches and more)
+        git merge <branch-name> (to merge to branches)
+
+    Way 2
+        Create a PR        
+
+        PR : It lets you tell others about changes you have pushed to a branch in a repo on github.
+
+Pull Command 
+    git pull origin main
+    used to fetch and download content from a remote repo and immediately update the local repo to match that content
+
+Resolving Merge Conflicts
+    An event that takes place when Git is unable to automatically resolve differences in code between two commits
+
+Undoing changes
+
+    Case 1: staged changes
+        git reset <file-name>
+        git reset
+
+    Case 2: commited changes (for one commit>
+        git reset Head~1
+
+    Case 3: commited changes (for many commits)
+        git reset <commit-hash>
+        git reset --hard <commit-hash>
+
+Fork 
+    A fork is a new repo that shares code and visibility settings with the original upstream repository.
+    Fork is a rough copy.
+
