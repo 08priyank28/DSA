@@ -2,3 +2,9 @@ git init
 
 git status
 
+git add . 
+git add <file names>
+
+git commit -m "msg"
+
+git restore --staged <file>
